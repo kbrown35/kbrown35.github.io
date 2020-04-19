@@ -1,0 +1,391 @@
+
+
+/* accessibility */
+
+a.skip_main {
+    position:absolute;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+    display: none;
+  }
+  
+
+/* navbar */
+  
+  .navbar-light .navbar-nav .nav-link {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .navbar-custom {
+    background-color: #367479;
+}
+
+  .custom-toggler.navbar-toggler { 
+    border-color: white; 
+} 
+
+.custom-toggler .navbar-toggler-icon { 
+    background-image: url( 
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); 
+} 
+
+  #home_button:hover{
+    color: #E1D491;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+
+  #safety-plan_button:hover{
+    color: #E1D491;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+  #contacts_button:hover{
+    color: #E1D491;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+  #account_button {
+    position: fixed;
+    right: 0;
+
+  }
+
+  .icon {
+      color: white;
+  }
+
+.icon .fa:hover {
+      color: #E1D491;
+  }
+  
+
+
+
+
+/* main content */
+
+  html,
+body {
+  width: 100%;
+  height: 100%;
+  font-size: min(max(12px, 1.2vw), 25px);
+  margin-bottom: 0%;
+}
+
+
+.img-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  }
+
+
+
+
+/*  */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Container for flexboxes */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* Create four equal columns */
+  .column {
+    flex: 25%;
+    padding: 20px;
+  }
+  
+  /* On screens that are 992px wide or less, go from four columns to two columns */
+  @media screen and (max-width: 992px) {
+    .column {
+      flex: 50%;
+    }
+  }
+  
+  /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .row {
+      flex-direction: column;
+    }
+  }
+
+
+
+ .wrapper {
+    display: flex;
+    max-width: 1190px;
+    margin: 20px auto;
+  }
+
+
+.box-title {
+    text-align: left;
+    color:  #367479;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.content-box {
+    height:600px;
+    width:100%;
+    border:4px solid #367479;
+    overflow:auto;
+}
+
+.safety-box {
+    height:175px;
+    margin: 15px;
+    background-color: #9BB9BC;
+}
+
+.safety-text {
+    margin: 10px;
+}
+
+
+/* Contact Summary */
+.contact-box {
+    height:270px;
+    width: 500px;
+    margin: 15px;
+    background-color: #9BB9BC;
+    overflow-y:hidden;
+    overflow-x:scroll;
+}
+
+.contact-card {
+    height:200px;
+    width: 450px;
+    background-color: slategray;
+    margin: 20px;
+}
+
+.img-contact {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height:200px;
+    width: 450px;
+  }
+
+.column2 {
+    display: flex;
+    padding: 5px;
+    flex-wrap: nowrap;
+  }
+
+.contact-text {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: -10px;
+    font-weight: bold;
+}
+
+.crisis {
+    font-weight: bold;
+    color: #AB2525;
+    text-decoration: underline;
+}
+
+
+/* Address Book */
+
+.address-card {
+    height: 80px;
+    width: 445px;
+    background-color: slategray;
+    margin: 20px;
+}
+
+.img-addressbook {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 80px;
+    width: 445px;
+  }
+
+
+/* ############################## */
+
+/* Safety Plan Page*/
+.content-box2 {
+    height:293px;
+    width:100%;
+    border:4px solid #367479;
+    overflow:auto;
+}
+
+
+/* Selfcare */
+
+.box-margin {
+    margin: 15px;
+}
+
+.box-title2 {
+    text-align: center;
+    color:  #367479;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.plan-title {
+    text-align: center;
+    color:  white;
+    font-weight: bold;
+    font-size: 16px;
+    background: #367479;
+}
+
+.img-cal {
+    display: block;
+    margin-left: 5px;
+    margin-top: 30px;
+    height: 180px;
+    width: 200px;
+  }
+
+
+
+/* Checkboxes */
+
+  .control {
+    font-family: arial;
+    display: block;
+    position: relative;
+    padding-left: 31px;
+    margin-bottom: 5px;
+    padding-top: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+    .control input {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+    }
+.control_indicator {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background: #e6e6e6;
+    border: 0px solid #000000;
+    border-radius: 0px;
+}
+.control:hover input ~ .control_indicator,
+.control input:focus ~ .control_indicator {
+    background: #cccccc;
+}
+
+.control input:checked ~ .control_indicator {
+    background: #367479;
+}
+.control:hover input:not([disabled]):checked ~ .control_indicator,
+.control input:checked:focus ~ .control_indicator {
+    background: #0e6647d;
+}
+.control input:disabled ~ .control_indicator {
+    background: #e6e6e6;
+    opacity: 0.6;
+    pointer-events: none;
+}
+.control_indicator:after {
+    box-sizing: unset;
+    content: '';
+    position: absolute;
+    display: none;
+}
+.control input:checked ~ .control_indicator:after {
+    display: block;
+}
+.control-checkbox .control_indicator:after {
+    left: 8px;
+    top: 4px;
+    width: 3px;
+    height: 8px;
+    border: solid #ffffff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+.control-checkbox input:disabled ~ .control_indicator:after {
+    border-color: #7b7b7b;
+}
+.control-checkbox .control_indicator::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4.5rem;
+    height: 4.5rem;
+    margin-left: -1.3rem;
+    margin-top: -1.3rem;
+    background: #2aa1c0;
+    border-radius: 3rem;
+    opacity: 0.6;
+    z-index: 99999;
+    transform: scale(0);
+}
+@keyframes s-ripple {
+    0% {
+        transform: scale(0);
+    }
+    20% {
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1);
+    }
+}
+@keyframes s-ripple-dup {
+   0% {
+       transform: scale(0);
+    }
+   30% {
+        transform: scale(1);
+    }
+    60% {
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1);
+    }
+}
+.control-checkbox input + .control_indicator::before {
+    animation: s-ripple 250ms ease-out;
+}
+.control-checkbox input:checked + .control_indicator::before {
+    animation-name: s-ripple-dup;
+}
+
+
+
+
+/* Resources */
+
+.resource-box {
+    height:100px;
+    margin: 15px;
+    background-color: #9BB9BC;
+}
+
+
+
